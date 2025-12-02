@@ -41,9 +41,9 @@ public class Main {
         );
 
         perguntas[1] = new Pergunta(
-                "Quem pintou Mona Lisa?",
-                new String[]{"Leonardo da Vinci", "Pablo Picassoc", "Vincent van Gogh", "Carlos Drummond", "Rafael"},
-                'a'
+                "Quem ganhou a libertadores de 2012 ? ",
+                new String[]{"Flamengo", "santos", "Vasco", "corinthians", "Barcelona"},
+                'd'
         );
 
         perguntas[2] = new Pergunta(
@@ -134,16 +134,16 @@ public class Main {
             char resposta = scanner.next().charAt(0);
 
             if (perguntas[i].verificarResposta(resposta)) {
-                System.out.println("✅ Correto!");
+                System.out.println("Correto!");
                 pontuacao++;
             } else {
-                System.out.println("❌ Errado! A resposta correta era: " + perguntas[i].respostaCorreta);
+                System.out.println("Errado! A resposta correta era: " + perguntas[i].respostaCorreta);
             }
         }
 
         System.out.println("\n--- FIM DO QUIZ ---");
         System.out.println("Você acertou " + pontuacao + " de " + perguntas.length + " perguntas!");
-        System.out.println("\nOlá Kayky lindo 😄");
+        System.out.println("\nola devkacik");
 
         scanner.close();
     }
